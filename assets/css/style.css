@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 0;
+}
+nav .navbar .logo {
+  width: 15%;
+}
+nav .navbar .logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+nav .navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  color: white;
+}
+nav .navbar ul li {
+  font-size: 19px;
+}
+
+.banner {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://sgp1.digitaloceanspaces.com/adaybulletin/2019/04/feature_thereview_endgame.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.banner .b-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+}
+.banner .b-all .travel {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  text-align: center;
+}
+.banner .b-all .travel p {
+  font-size: 10px;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.banner .b-all .travel h1 {
+  font-size: 60px;
+}
+.banner .b-all .travel button {
+  width: 50%;
+  padding: 20px 0;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 100px;
+}
+.banner .b-all .travel button:hover {
+  background-color: rgb(255, 208, 0);
+  border-color: rgb(255, 208, 0);
+}
+
+.plan {
+  width: 100%;
+}
+.plan .p-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.plan .p-all .p-div4 {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.plan .p-all .p-div4 .p-img {
+  width: 28%;
+}
+.plan .p-all .p-div4 .p-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.plan .p-all .p-div4 h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+.plan .p-all .p-div4 p {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  padding: 0 20px;
+}/*# sourceMappingURL=style.css.map */
