@@ -60,7 +60,7 @@ nav .navbar ul li {
   padding: 200px 0;
 }
 .banner .b-all .travel {
-  width: 50%;
+  width: 53%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,4 +128,221 @@ nav .navbar ul li {
   font-size: 18px;
   color: gray;
   padding: 0 20px;
+}
+
+.Greece {
+  width: 100%;
+  height: 100vh;
+}
+.Greece .g-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.Greece .g-all .g-1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: beige;
+  padding: 0 30px;
+  gap: 20px;
+}
+.Greece .g-all .g-1 h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+.Greece .g-all .g-1 p {
+  font-size: 18px;
+}
+.Greece .g-all .g-2 {
+  width: 50%;
+  height: 100%;
+}
+.Greece .g-all .g-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Paris {
+  width: 100%;
+  height: 100vh;
+}
+.Paris .p-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.Paris .p-all .p-2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: beige;
+  padding: 0 30px;
+  gap: 20px;
+}
+.Paris .p-all .p-2 h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+.Paris .p-all .p-2 p {
+  font-size: 18px;
+}
+.Paris .p-all .p-1 {
+  width: 50%;
+  height: 100%;
+}
+.Paris .p-all .p-1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popular {
+  width: 100%;
+}
+.popular .p-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+.popular .p-all .p-head {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.popular .p-all .p-head h2 {
+  font-size: 35px;
+  font-weight: 300;
+}
+.popular .p-all .p-head p {
+  font-size: 18px;
+  color: gray;
+}
+.popular .p-all .p-divs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.popular .p-all .p-divs .div8 {
+  width: 23%;
+  border-radius: 5px;
+}
+.popular .p-all .p-divs .div8 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 990px) {
+  nav .container {
+    max-width: 800px;
+  }
+  nav .container .navbar ul {
+    gap: 20px;
+  }
+  .plan .container {
+    max-width: 800px;
+    text-align: center;
+  }
+  .popular .container {
+    max-width: 800px;
+  }
+  .popular .container .p-all .p-head {
+    width: 100%;
+  }
+  .popular .container .p-all .p-divs .div8 {
+    width: 22.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .container {
+    padding: 0 20px;
+  }
+  nav .container .navbar ul {
+    display: none;
+  }
+  .banner .container {
+    padding: 0 20px;
+  }
+  .banner .container .b-all .travel {
+    width: 40%;
+  }
+  .banner .container .b-all .travel h1 {
+    font-size: 30px;
+  }
+  .banner .container .b-all .travel p {
+    font-size: 7px;
+  }
+  .banner .container .b-all .travel button {
+    width: 100%;
+  }
+  .plan .container {
+    padding: 0 20px;
+  }
+  .plan .container .p-all {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .plan .container .p-all .p-div4 {
+    width: 47.5%;
+    padding: 0;
+  }
+  .plan .container .p-all .p-div4 .p-img img {
+    width: 40%;
+  }
+  .plan .container .p-all .p-div4 h3 {
+    font-size: 21px;
+  }
+  .Greece {
+    height: 200vh;
+    width: 100%;
+  }
+  .Greece .g-all {
+    flex-direction: column;
+  }
+  .Greece .g-all .g-1, .Greece .g-all .g-2 {
+    width: 100%;
+  }
+  .Paris {
+    height: 200vh;
+  }
+  .Paris .p-all {
+    flex-direction: column;
+  }
+  .Paris .p-all .p-1 {
+    width: 100%;
+  }
+  .Paris .p-all .p-2 {
+    width: 100%;
+  }
+  .popular .container {
+    padding: 0 20px;
+  }
+  .popular .container .p-all .p-head h2 {
+    font-size: 25px;
+  }
+  .popular .container .p-all .p-divs .div8 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
