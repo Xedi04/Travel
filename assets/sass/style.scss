@@ -46,6 +46,9 @@ nav {
 
             }
         }
+        i{
+            display: none;
+        }
     }
 }
 
@@ -220,41 +223,257 @@ nav {
     }
 }
 
-.popular{
+.popular {
     width: 100%;
-    .p-all{
+
+    .p-all {
         @include mini;
         flex-direction: column;
         gap: 50px;
         padding: 50px;
-        .p-head{
+
+        .p-head {
             width: 60%;
             @include flex;
             flex-direction: column;
             gap: 20px;
-            h2{
+
+            h2 {
                 font-size: 35px;
                 font-weight: 300;
             }
-            p{
+
+            p {
                 font-size: 18px;
                 color: gray;
             }
         }
-        .p-divs{
+
+        .p-divs {
             @include mini;
             flex-wrap: wrap;
-           // justify-content: space-between;
+            // justify-content: space-between;
             gap: 20px;
-            .div8{
+
+            .div8 {
                 width: 23%;
                 border-radius: 5px;
-                img{
+
+                img {
                     width: 100%;
                     object-fit: cover;
                     border-radius: 5px;
                 }
             }
+        }
+    }
+}
+
+.Discover {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://cdn.britannica.com/30/180130-138-4FC01CDD/Overview-Amsterdam.jpg?w=800&h=450&c=crop");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .d-all {
+        @include mini;
+        padding: 100px 0;
+        color: white;
+        text-align: center;
+
+        .d-1 {
+            width: 50%;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+.yellow {
+    width: 100%;
+    background-color: rgb(255, 204, 0);
+
+    .y-all {
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        color: navy;
+
+        p {
+            font-size: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px 0;
+            border: none;
+        }
+
+        .div-inp {
+            @include mini;
+            justify-content: space-between;
+
+            .y-1 {
+                width: 49.5%;
+                background-color: white;
+                padding: 10px 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                p {
+                    font-size: 10px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .book {
+            @include mini;
+            justify-content: space-between;
+
+            button {
+                padding: 5px 10px;
+                font-size: 25px;
+                background-color: rgb(88, 88, 218);
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+
+            .com {
+                font-size: 28px;
+            }
+        }
+
+    }
+}
+
+.news {
+    width: 100%;
+    background-color: aliceblue;
+
+    .n-all {
+        @include mini;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 0;
+
+        .n-head {
+            @include mini;
+            justify-content: space-between;
+
+            .text {
+                h2 {
+                    font-size: 35px;
+                    font-weight: 300;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            button {
+                padding: 10px;
+                font-size: 15px;
+                background-color: rgb(255, 196, 0);
+                border: none;
+                cursor: pointer;
+                transition: all .5s ease;
+
+                &:hover {
+                    background-color: rgb(255, 225, 0);
+                }
+            }
+        }
+
+        .n-divs {
+            @include mini;
+            justify-content: space-between;
+
+            .div3 {
+                width: 31.5%;
+                background-color: white;
+
+                .n-img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .n-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 30px;
+                    p{
+                        color: gray;
+                        font-size: 17px;
+                    }
+                    h3{
+                        font-size: 25px;
+                        font-weight: 300;
+                    }
+                }
+              
+            }
+            button{
+                display: none;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    .end-1{
+        width: 100%;
+        display: flex;
+        padding: 50px 0;
+        //justify-content: space-between;
+        .div5{
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+           
+            
+        }
+    }
+    .end-2{
+        @include mini;
+        justify-content: space-between;
+        padding: 30px 0;
+        p{
+            font-size: 17px;
+            color: gray;
+        }
+        ul{
+            list-style: none;
+            @include flex;
+            gap:30px;
         }
     }
 }
@@ -279,18 +498,62 @@ nav {
         }
     }
 
-    .popular{
-        .container{
+    .popular {
+        .container {
             max-width: 800px;
-            
-            .p-all{
-                .p-head{
+
+            .p-all {
+                .p-head {
                     width: 100%;
                 }
-                .p-divs{
-                    .div8{
+
+                .p-divs {
+                    .div8 {
                         width: 22.5%;
                     }
+                }
+            }
+        }
+    }
+
+    .Discover {
+        .d-all {
+            .d-1 {
+                width: 60%;
+            }
+        }
+    }
+
+    .yellow {
+        .container {
+            max-width: 800px;
+
+        }
+    }
+
+    .news{
+        .container{
+            max-width: 800px;
+            .n-all{
+                .n-divs{
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    .div3{
+                        width: 47.6%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            max-width: 800px;
+            .end-1{
+                flex-wrap: wrap;
+                gap: 30px;
+                .div5{
+                    width: 30%;
                 }
             }
         }
@@ -306,6 +569,11 @@ nav {
             .navbar {
                 ul {
                     display: none;
+                }
+                i{
+                    display: flex;
+                    color: white;
+                    font-size: 30px;
                 }
             }
         }
@@ -361,45 +629,121 @@ nav {
         }
     }
 
-    .Greece{
+    .Greece {
         height: 200vh;
         width: 100%;
-        .g-all{
-           flex-direction: column;
-           .g-1, .g-2{
-            width: 100%;
-           }
-        }
-    }
 
-    .Paris{
-        height: 200vh;
-        
-        .p-all{
+        .g-all {
             flex-direction: column;
-            .p-1{
-                width: 100%;
-            }
-            .p-2{
+
+            .g-1,
+            .g-2 {
                 width: 100%;
             }
         }
     }
 
-    .popular{
-        .container{
+    .Paris {
+        height: 200vh;
+
+        .p-all {
+            flex-direction: column;
+
+            .p-1 {
+                width: 100%;
+            }
+
+            .p-2 {
+                width: 100%;
+            }
+        }
+    }
+
+    .popular {
+        .container {
             padding: 0 20px;
-            .p-all{
-                .p-head{
-                    h2{
+
+            .p-all {
+                .p-head {
+                    h2 {
                         font-size: 25px;
                     }
-                }   
-                .p-divs{
-                    .div8{
+                }
+
+                .p-divs {
+                    .div8 {
                         width: 100%;
                     }
                 }
+            }
+        }
+    }
+
+    .Discover {
+        .d-all {
+            .d-1 {
+                width: 100%;
+
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .yellow {
+        .book {
+            flex-direction: column;
+
+            button {
+                width: 100%;
+            }
+
+            .com {
+                width: 100%;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .news{
+        .container{
+            padding: 0 20px;
+            .n-all{
+                .n-head{
+                    button{
+                        display: none;
+                    }
+                    h2{
+                        font-size: 25px;
+                    }
+                    p{
+                        color: gray;
+                    }
+                }
+                .n-divs{
+                    .div3{
+                        width: 100%;
+                    }
+                }
+                button{
+                    width: 100%;
+                    background-color: rgb(255, 213, 0);
+                    border: none;
+                    padding: 12px 0;
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            .end-1{
+                display: none;
+            }
+            .end-2{
+                flex-direction: column-reverse;
+                gap: 50px;
             }
         }
     }

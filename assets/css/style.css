@@ -45,6 +45,9 @@ nav .navbar ul {
 nav .navbar ul li {
   font-size: 19px;
 }
+nav .navbar i {
+  display: none;
+}
 
 .banner {
   width: 100%;
@@ -254,6 +257,207 @@ nav .navbar ul li {
   border-radius: 5px;
 }
 
+.Discover {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://cdn.britannica.com/30/180130-138-4FC01CDD/Overview-Amsterdam.jpg?w=800&h=450&c=crop");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Discover .d-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+}
+.Discover .d-all .d-1 {
+  width: 50%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Discover .d-all .d-1 h2 {
+  font-size: 35px;
+}
+.Discover .d-all .d-1 p {
+  font-size: 18px;
+}
+
+.yellow {
+  width: 100%;
+  background-color: rgb(255, 204, 0);
+}
+.yellow .y-all {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: navy;
+}
+.yellow .y-all p {
+  font-size: 20px;
+}
+.yellow .y-all input {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+}
+.yellow .y-all .div-inp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.yellow .y-all .div-inp .y-1 {
+  width: 49.5%;
+  background-color: white;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.yellow .y-all .div-inp .y-1 p {
+  font-size: 10px;
+}
+.yellow .y-all .div-inp .y-1 h6 {
+  font-size: 16px;
+}
+.yellow .y-all .book {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.yellow .y-all .book button {
+  padding: 5px 10px;
+  font-size: 25px;
+  background-color: rgb(88, 88, 218);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.yellow .y-all .book .com {
+  font-size: 28px;
+}
+
+.news {
+  width: 100%;
+  background-color: aliceblue;
+}
+.news .n-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
+}
+.news .n-all .n-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.news .n-all .n-head .text h2 {
+  font-size: 35px;
+  font-weight: 300;
+}
+.news .n-all .n-head .text p {
+  font-size: 18px;
+}
+.news .n-all .n-head button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: rgb(255, 196, 0);
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.news .n-all .n-head button:hover {
+  background-color: rgb(255, 225, 0);
+}
+.news .n-all .n-divs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.news .n-all .n-divs .div3 {
+  width: 31.5%;
+  background-color: white;
+}
+.news .n-all .n-divs .div3 .n-img {
+  width: 100%;
+}
+.news .n-all .n-divs .div3 .n-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news .n-all .n-divs .div3 .n-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+}
+.news .n-all .n-divs .div3 .n-text p {
+  color: gray;
+  font-size: 17px;
+}
+.news .n-all .n-divs .div3 .n-text h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+.news .n-all .n-divs button {
+  display: none;
+}
+
+footer {
+  width: 100%;
+}
+footer .end-1 {
+  width: 100%;
+  display: flex;
+  padding: 50px 0;
+}
+footer .end-1 .div5 {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .end-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+footer .end-2 p {
+  font-size: 17px;
+  color: gray;
+}
+footer .end-2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 @media screen and (max-width: 990px) {
   nav .container {
     max-width: 800px;
@@ -274,6 +478,32 @@ nav .navbar ul li {
   .popular .container .p-all .p-divs .div8 {
     width: 22.5%;
   }
+  .Discover .d-all .d-1 {
+    width: 60%;
+  }
+  .yellow .container {
+    max-width: 800px;
+  }
+  .news .container {
+    max-width: 800px;
+  }
+  .news .container .n-all .n-divs {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .news .container .n-all .n-divs .div3 {
+    width: 47.6%;
+  }
+  footer .container {
+    max-width: 800px;
+  }
+  footer .container .end-1 {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  footer .container .end-1 .div5 {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 768px) {
   nav .container {
@@ -281,6 +511,11 @@ nav .navbar ul li {
   }
   nav .container .navbar ul {
     display: none;
+  }
+  nav .container .navbar i {
+    display: flex;
+    color: white;
+    font-size: 30px;
   }
   .banner .container {
     padding: 0 20px;
@@ -321,7 +556,8 @@ nav .navbar ul li {
   .Greece .g-all {
     flex-direction: column;
   }
-  .Greece .g-all .g-1, .Greece .g-all .g-2 {
+  .Greece .g-all .g-1,
+  .Greece .g-all .g-2 {
     width: 100%;
   }
   .Paris {
@@ -345,4 +581,48 @@ nav .navbar ul li {
   .popular .container .p-all .p-divs .div8 {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+  .Discover .d-all .d-1 {
+    width: 100%;
+  }
+  .Discover .d-all .d-1 h2 {
+    font-size: 25px;
+  }
+  .yellow .book {
+    flex-direction: column;
+  }
+  .yellow .book button {
+    width: 100%;
+  }
+  .yellow .book .com {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .news .container {
+    padding: 0 20px;
+  }
+  .news .container .n-all .n-head button {
+    display: none;
+  }
+  .news .container .n-all .n-head h2 {
+    font-size: 25px;
+  }
+  .news .container .n-all .n-head p {
+    color: gray;
+  }
+  .news .container .n-all .n-divs .div3 {
+    width: 100%;
+  }
+  .news .container .n-all button {
+    width: 100%;
+    background-color: rgb(255, 213, 0);
+    border: none;
+    padding: 12px 0;
+  }
+  footer .container .end-1 {
+    display: none;
+  }
+  footer .container .end-2 {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=style.CSS.map */
