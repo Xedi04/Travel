@@ -31,13 +31,13 @@ Submit.addEventListener("click", () => {
             name: Name.value,
             des: Des.value,
             image: imgDiv.src,
-        })
+        }).then(res=>window.location="../index.html")
     } else {
         axios.patch(`http://localhost:3000/TRAVEL/${id}`, {
             name: Name.value,
             des: Des.value,
             image: imgDiv.src
-        })
+        }).then(res=>window.location="./index.html")
     }
 })
 

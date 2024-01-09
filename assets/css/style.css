@@ -11,12 +11,37 @@
   margin: auto;
 }
 
+.nav {
+  background-color: darkcyan;
+}
+
 nav {
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1000;
+}
+nav .menu {
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  display: none;
+}
+nav .menu ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+nav .menu ul li {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+nav .menu ul li a {
+  color: black;
+  text-decoration: none;
 }
 nav .navbar {
   width: 100%;
@@ -44,6 +69,10 @@ nav .navbar ul {
 }
 nav .navbar ul li {
   font-size: 19px;
+}
+nav .navbar ul li a {
+  color: white;
+  text-decoration: none;
 }
 nav .navbar i {
   display: none;
@@ -95,8 +124,57 @@ nav .navbar i {
   border-color: rgb(255, 208, 0);
 }
 
+#top {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#top i {
+  font-size: 30px;
+  color: white;
+}
+
+.pl {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pl .al {
+  background-color: darkslategray;
+}
+
 .plan {
   width: 100%;
+}
+.plan .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  flex-direction: column;
+  gap: 30px;
+}
+.plan .btn input {
+  width: 300px;
+  padding: 10px 0;
+  border: 1px solid navy;
+}
+.plan .btn button {
+  width: 200px;
+  padding: 10px 0;
+  background-color: navy;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 .plan .p-all {
   width: 100%;
@@ -105,6 +183,27 @@ nav .navbar i {
   align-items: center;
   justify-content: space-between;
   padding: 50px 0;
+}
+.plan .p-all #form {
+  width: 50%;
+  background-color: darkcyan;
+  margin: auto;
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.plan .p-all #form input {
+  padding: 5px 0;
+}
+.plan .p-all #form #submit {
+  width: 200px;
+  background-color: navy;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  cursor: pointer;
 }
 .plan .p-all .p-div4 {
   width: 22%;
@@ -131,6 +230,21 @@ nav .navbar i {
   font-size: 18px;
   color: gray;
   padding: 0 20px;
+}
+.plan .p-all .p-div4 .div-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan .p-all .p-div4 .div-btn button {
+  padding: 5px 0;
+  border: none;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  width: 60px;
 }
 
 .Greece {
@@ -220,7 +334,7 @@ nav .navbar i {
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  padding: 50px;
+  padding: 50px 0;
 }
 .popular .p-all .p-head {
   width: 60%;
@@ -458,6 +572,10 @@ footer .end-2 ul {
   gap: 30px;
 }
 
+.f {
+  background-color: darkcyan;
+}
+
 @media screen and (max-width: 990px) {
   nav .container {
     max-width: 800px;
@@ -625,4 +743,4 @@ footer .end-2 ul {
     flex-direction: column-reverse;
     gap: 50px;
   }
-}/*# sourceMappingURL=style.CSS.map */
+}/*# sourceMappingURL=style.css.map */

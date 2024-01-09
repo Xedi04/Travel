@@ -14,12 +14,42 @@
     margin: auto;
 }
 
+.nav {
+    background-color: darkcyan;
+}
+
 nav {
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1000;
+
+    .menu {
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+        display: none;
+
+        ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+                font-size: 20px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                border-bottom: 1px solid black;
+            }
+        }
+    }
 
     .navbar {
         @include mini;
@@ -44,9 +74,15 @@ nav {
             li {
                 font-size: 19px;
 
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
             }
         }
-        i{
+
+        i {
             display: none;
         }
     }
@@ -100,13 +136,82 @@ nav {
     }
 }
 
+#top{
+    width: 60px;
+    height: 60px;
+    @include flex;
+    background-color: navy;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    i{
+        font-size: 30px;
+        color: white;
+    }
+}
+
+.pl {
+    background-color: beige;
+    @include flex;
+
+    .al {
+        background-color: darkslategray;
+    }
+}
+
 .plan {
     width: 100%;
+
+    .btn {
+        @include mini;
+        padding: 50px 0;
+        flex-direction: column;
+        gap: 30px;
+        input{
+            width: 300px;
+            padding: 10px 0;
+            border: 1px solid navy;
+        }
+
+        button {
+            width: 200px;
+            padding: 10px 0;
+            background-color: navy;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
 
     .p-all {
         @include mini;
         justify-content: space-between;
         padding: 50px 0;
+
+        #form {
+            width: 50%;
+            background-color: darkcyan;
+            margin: auto;
+            margin-top: 100px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            input {
+                padding: 5px 0;
+            }
+
+            #submit {
+                width: 200px;
+                background-color: navy;
+                border: none;
+                color: white;
+                padding: 10px 0;
+                cursor: pointer;
+            }
+        }
 
         .p-div4 {
             width: 22%;
@@ -133,6 +238,21 @@ nav {
                 font-size: 18px;
                 color: gray;
                 padding: 0 20px;
+            }
+
+            .div-btn {
+                width: 100%;
+                @include flex;
+                justify-content: space-between;
+
+                button {
+                    padding: 5px 0;
+                    border: none;
+                    background-color: navy;
+                    color: white;
+                    cursor: pointer;
+                    width: 60px;
+                }
             }
         }
     }
@@ -230,7 +350,7 @@ nav {
         @include mini;
         flex-direction: column;
         gap: 50px;
-        padding: 50px;
+        padding: 50px 0;
 
         .p-head {
             width: 60%;
@@ -252,7 +372,6 @@ nav {
         .p-divs {
             @include mini;
             flex-wrap: wrap;
-            // justify-content: space-between;
             gap: 20px;
 
             .div8 {
@@ -423,59 +542,72 @@ nav {
                         object-fit: cover;
                     }
                 }
-                .n-text{
+
+                .n-text {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
                     padding: 30px;
-                    p{
+
+                    p {
                         color: gray;
                         font-size: 17px;
                     }
-                    h3{
+
+                    h3 {
                         font-size: 25px;
                         font-weight: 300;
                     }
                 }
-              
+
             }
-            button{
+
+            button {
                 display: none;
             }
         }
     }
 }
 
-footer{
+footer {
     width: 100%;
-    .end-1{
+
+    .end-1 {
         width: 100%;
         display: flex;
         padding: 50px 0;
+
         //justify-content: space-between;
-        .div5{
+        .div5 {
             width: 18%;
             display: flex;
             flex-direction: column;
             gap: 10px;
-           
-            
+
+
         }
     }
-    .end-2{
+
+    .end-2 {
         @include mini;
         justify-content: space-between;
         padding: 30px 0;
-        p{
+
+        p {
             font-size: 17px;
             color: gray;
         }
-        ul{
+
+        ul {
             list-style: none;
             @include flex;
-            gap:30px;
+            gap: 30px;
         }
     }
+}
+
+.f {
+    background-color: darkcyan;
 }
 
 @media screen and (max-width:990px) {
@@ -531,14 +663,16 @@ footer{
         }
     }
 
-    .news{
-        .container{
+    .news {
+        .container {
             max-width: 800px;
-            .n-all{
-                .n-divs{
+
+            .n-all {
+                .n-divs {
                     flex-wrap: wrap;
                     gap: 30px;
-                    .div3{
+
+                    .div3 {
                         width: 47.6%;
                     }
                 }
@@ -546,13 +680,15 @@ footer{
         }
     }
 
-    footer{
-        .container{
+    footer {
+        .container {
             max-width: 800px;
-            .end-1{
+
+            .end-1 {
                 flex-wrap: wrap;
                 gap: 30px;
-                .div5{
+
+                .div5 {
                     width: 30%;
                 }
             }
@@ -570,7 +706,8 @@ footer{
                 ul {
                     display: none;
                 }
-                i{
+
+                i {
                     display: flex;
                     color: white;
                     font-size: 30px;
@@ -706,27 +843,32 @@ footer{
         }
     }
 
-    .news{
-        .container{
+    .news {
+        .container {
             padding: 0 20px;
-            .n-all{
-                .n-head{
-                    button{
+
+            .n-all {
+                .n-head {
+                    button {
                         display: none;
                     }
-                    h2{
+
+                    h2 {
                         font-size: 25px;
                     }
-                    p{
+
+                    p {
                         color: gray;
                     }
                 }
-                .n-divs{
-                    .div3{
+
+                .n-divs {
+                    .div3 {
                         width: 100%;
                     }
                 }
-                button{
+
+                button {
                     width: 100%;
                     background-color: rgb(255, 213, 0);
                     border: none;
@@ -736,12 +878,13 @@ footer{
         }
     }
 
-    footer{
-        .container{
-            .end-1{
+    footer {
+        .container {
+            .end-1 {
                 display: none;
             }
-            .end-2{
+
+            .end-2 {
                 flex-direction: column-reverse;
                 gap: 50px;
             }
