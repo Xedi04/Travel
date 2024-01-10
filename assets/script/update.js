@@ -25,7 +25,8 @@ fileImg.addEventListener("input", (e) => {
     }
 })
 
-Submit.addEventListener("click", () => {
+Submit.addEventListener("click", (e) => {
+    e.preventDefault()
     if (!id) {
         axios.post(`http://localhost:3000/TRAVEL`, {
             name: Name.value,
